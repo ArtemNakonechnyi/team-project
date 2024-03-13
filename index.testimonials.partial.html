@@ -5,6 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/index.testimonials.css" />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
@@ -17,6 +24,7 @@
         <h2 class="testimonials-header__title">Testimonials by Our Clients</h2>
         <div class="header-img">
           <img
+            style="width: 72px"
             class="testimonials-header__image"
             src="img/testimonials-images/bone-icon.svg"
             alt="Bone icon"
@@ -27,102 +35,132 @@
         </p>
       </div>
 
-      <div class="testimonials-carousel">
-        <button class="testimonials-carousel__button left-btn">
-          <img
-            width="30"
-            src="img/testimonials-images/left-arrow-icon.svg"
-            alt="left arrow icon"
-          />
-        </button>
-        <div class="testimonials-carousel__card">
-          <div class="card-img">
-            <img
-              class="testimonials-carousel__image"
-              src="img/testimonials-images/client-images/douglas_r.webp"
-              alt="Douglas foto"
-            />
+      <div class="testimonials-carousel d-block mx-auto col-md-8 col-lg-6">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="testimonials-carousel__card">
+                <div class="card-img">
+                  <img
+                    class="testimonials-carousel__image"
+                    src="img/testimonials-images/client-images/douglas_r.webp"
+                    alt="Douglas foto"
+                  />
+                </div>
+                <h3 class="testimonials-carousel__name">Douglas Wright</h3>
+                <p class="testimonials-carousel__description">
+                  and his gorgeous cat named Billy
+                </p>
+                <p class="testimonials-carousel__review">
+                  “I often order food for my cat from this store as they offer
+                  free shipping. The prices here are quite low, and you can
+                  order a lot of great goods by top manufacturers.”
+                </p>
+                <p class="testimonials-carousel__date">December 15, 2021</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-carousel__card">
+                <div class="card-img">
+                  <img
+                    class="testimonials-carousel__image"
+                    src="img/testimonials-images/client-images/diana_p.webp"
+                    alt="Diana foto"
+                  />
+                </div>
+                <h3 class="testimonials-carousel__name">Diana Peterson</h3>
+                <p class="testimonials-carousel__description">
+                  with Cooper,her lovely dog
+                </p>
+                <p class="testimonials-carousel__review">
+                  “My Cooper is already 10 years old and for the last 3 years, I
+                  have been ordering food, new leashes, and vitamins only at
+                  Happy Paw. They sell really high-quality goods!"
+                </p>
+                <p class="testimonials-carousel__date">February 02, 2022</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-carousel__card">
+                <div class="card-img">
+                  <img
+                    class="testimonials-carousel__image"
+                    src="img/testimonials-images/client-images/john_and_mery.webp"
+                    alt="John and Merry foto"
+                  />
+                </div>
+                <h3 class="testimonials-carousel__name">
+                  John and Mary Roberts
+                </h3>
+                <p class="testimonials-carousel__description">
+                  and their cool rabbit named Snowball
+                </p>
+                <p class="testimonials-carousel__review">
+                  “When we bought Snowball, Mary was very happy, but there were
+                  also many questions — we needed a cage, cleaning products,
+                  hay, etc. But we easily found all this in Happy Paw! ”
+                </p>
+                <p class="testimonials-carousel__date">March 28, 2022</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="testimonials-carousel__card">
+                <div class="card-img">
+                  <img
+                    class="testimonials-carousel__image"
+                    src="img/testimonials-images/client-images/dean_w.webp"
+                    alt="Dean foto"
+                  />
+                </div>
+                <h3 class="testimonials-carousel__name">Dean Williamson</h3>
+                <p class="testimonials-carousel__description">
+                  with Booper,the star of his instagram
+                </p>
+                <p class="testimonials-carousel__review">
+                  “Booper gets all the best from me and the Happy Paw store! I
+                  often treat him with some new toys, decorations for his cage,
+                  etc. I absolutely trust Happy Paw.”
+                </p>
+                <p class="testimonials-carousel__date">May 05, 2022</p>
+              </div>
+            </div>
           </div>
-          <h3 class="testimonials-carousel__name">Douglas Wright</h3>
-          <p class="testimonials-carousel__description">
-            and his gorgeous cat named Billy
-          </p>
-          <p class="testimonials-carousel__review">
-            “I often order food for my cat from this store as they offer free
-            shipping. The prices here are quite low, and you can order a lot of
-            great goods by top manufacturers.”
-          </p>
-          <p class="testimonials-carousel__date">December 15, 2021</p>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+            style="color: grey"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+            style="color: grey"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              style="transform: scaleX(-1)"
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-
-        <div class="testimonials-carousel__card">
-          <div class="card-img">
-            <img
-              class="testimonials-carousel__image"
-              src="img/testimonials-images/client-images/diana_p.webp"
-              alt="Diana foto"
-            />
-          </div>
-          <h3 class="testimonials-carousel__name">Diana Peterson</h3>
-          <p class="testimonials-carousel__description">
-            with Cooper,her lovely dog
-          </p>
-          <p class="testimonials-carousel__review">
-            “My Cooper is already 10 years old and for the last 3 years, I have
-            been ordering food, new leashes, and vitamins only at Happy Paw.
-            They sell really high-quality goods!"
-          </p>
-          <p class="testimonials-carousel__date">February 02, 2022</p>
-        </div>
-
-        <div class="testimonials-carousel__card">
-          <div class="card-img">
-            <img
-              class="testimonials-carousel__image"
-              src="img/testimonials-images/client-images/john_and_mery.webp"
-              alt="John and Merry foto"
-            />
-          </div>
-          <h3 class="testimonials-carousel__name">John and Mary Roberts</h3>
-          <p class="testimonials-carousel__description">
-            and their cool rabbit named Snowball
-          </p>
-          <p class="testimonials-carousel__review">
-            “When we bought Snowball, Mary was very happy, but there were also
-            many questions — we needed a cage, cleaning products, hay, etc. But
-            we easily found all this in Happy Paw! ”
-          </p>
-          <p class="testimonials-carousel__date">March 28, 2022</p>
-        </div>
-
-        <div class="testimonials-carousel__card">
-          <div class="card-img">
-            <img
-              class="testimonials-carousel__image"
-              src="img/testimonials-images/client-images/dean_w.webp"
-              alt="Dean foto"
-            />
-          </div>
-          <h3 class="testimonials-carousel__name">Dean Williamson</h3>
-          <p class="testimonials-carousel__description">
-            with Booper,the star of his instagram
-          </p>
-          <p class="testimonials-carousel__review">
-            “Booper gets all the best from me and the Happy Paw store! I often
-            treat him with some new toys, decorations for his cage, etc. I
-            absolutely trust Happy Paw.”
-          </p>
-          <p class="testimonials-carousel__date">May 05, 2022</p>
-        </div>
-
-        <button class="testimonials-carousel__button right-btn">
-          <img
-            width="30"
-            src="img/testimonials-images/right-arrow-icon.svg"
-            alt="right arrow icon"
-          />
-        </button>
       </div>
     </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
